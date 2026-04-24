@@ -46,10 +46,10 @@ export function Header() {
 
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center space-x-4">
-              <Link href="/login" className="text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors">
+              <Link href="/login" className="text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors" data-testid="header-login-btn">
                 Login
               </Link>
-              <Link href="/register-cooperative" className="relative group overflow-hidden bg-blue-900 text-white px-6 py-2.5 rounded-full font-semibold text-sm shadow-lg shadow-blue-900/25 hover:shadow-blue-900/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2">
+              <Link href="/register-cooperative" className="relative group overflow-hidden bg-blue-900 text-white px-6 py-2.5 rounded-full font-semibold text-sm shadow-lg shadow-blue-900/25 hover:shadow-blue-900/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2" data-testid="header-register-btn">
                 <span className="relative z-10">Register Cooperative</span>
                 <ChevronRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-blue-900 opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>

@@ -29,11 +29,11 @@ export function Hero() {
             </motion.p>
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
-              <Link href="/register-cooperative" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5 transition-all">
+              <Link href="/register-cooperative" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5 transition-all" data-testid="hero-register-btn">
                 Register Cooperative
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/demo" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm hover:shadow-md hover:bg-slate-50 transition-all">
+              <Link href="/demo" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm hover:shadow-md hover:bg-slate-50 transition-all" data-testid="hero-demo-btn">
                 Book a Live Demo
               </Link>
             </motion.div>
